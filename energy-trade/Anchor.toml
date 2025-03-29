@@ -1,0 +1,20 @@
+[toolchain]
+anchor_version = "0.31.0"
+
+[features]
+energy_trade = ["energy_trade/idl-build"]
+
+[programs.localnet]
+energy_trade = "Dxt7cdAgWNnnEFeyJSihnhLkLjfS18j2anyhYfwXEXnV"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/gregorytaylor/.config/solana/id.json"
+
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+

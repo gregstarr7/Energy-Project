@@ -1,0 +1,6 @@
+[workspace]
+members = [
+  "programs/energy_trade"
+]
+[profile.release]
+overflow-checks = true
